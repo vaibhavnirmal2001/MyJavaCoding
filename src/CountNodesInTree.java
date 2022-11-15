@@ -13,8 +13,7 @@ public class CountNodesInTree {
   }
     public int countNodes(TreeNode root) {
         if(root==null) return 0;
-        int left= countNodes(root.left);
-        int right= countNodes(root.right);
+        int left= countNodes(root.left), right= countNodes(root.right);
         return left+right+1;
     }
 }
